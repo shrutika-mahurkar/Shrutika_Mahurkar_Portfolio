@@ -1,0 +1,43 @@
+/* ul{
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+
+
+li {
+    display: inline-block;
+    margin-right: 90px;
+    margin-left: 5px;
+  }
+
+  h1 {
+    display: inline;
+    margin-right: 200px;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-start;
+    justify-content: space-around;
+} 
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+#navbar{
+    display: flex;
+} */

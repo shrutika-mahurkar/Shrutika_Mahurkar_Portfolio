@@ -1,0 +1,157 @@
+  <!-- <style>
+                body{ margin:0;  } 
+                #particles-js{  
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: #151039;   
+             } 
+            </style> -->
+         
+ 
+            
+            <div id="particles-js">
+                <main >
+                    
+                  <div class="flip-container grid-photo">
+                    <div class="flipper">
+        
+                       <div class="front">
+                        <img class="coverPhoto" src="images/coverPageImage.jpg" width="280" height="300" alt="profile photo of shrutika">
+                       </div>
+                       <div class="back" >
+                        <img  class="coverPhoto" src="images/cover2.jpg" width="280" height="300" alt="profile photo of shrutika">
+                       </div>
+                       
+                    </div>
+                    
+                 
+                 <div id="bottom">
+                    <p>HII........interested in knowing me ?
+                        Lets start the journey... </p> 
+                        <div id="scooter">
+                            <img  src="images/scootergirl.gif" width="100" height="80" alt="gif of girl driving scooter">
+                        </div>
+        
+                </div>
+                
+        
+                 
+        
+                    </main>
+                </div>
+                
+                </body>
+
+
+                styling/////////////////////////////////
+
+
+                body{ margin:0;  } 
+/* .coverPage-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+
+} */
+
+.grid-photo{
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+   
+}
+
+.grid-text{
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    margin-top: 25%;
+    margin-left: 45%;;
+    
+}
+
+.coverPhoto{
+    border-radius: 250px;
+   
+
+}
+
+.flip-container {
+	-webkit-perspective: 1000;
+	width: 280px;
+}
+
+.flipper {
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	height: 100%;
+    width: 100%;
+   
+}
+
+.front,
+.back {
+    
+	width: 280px;
+	height: 300px;
+	position: absolute;
+    
+	-webkit-backface-visibility: hidden;
+	
+	
+}
+
+
+.back {
+	-webkit-transform: rotateY(180deg);
+   
+	
+}
+.front {
+	z-index: 2;
+	
+}
+
+#bottom{
+    background-color: aquamarine;
+    margin-top: 50%;
+}
+
+
+
+/* Flip Animation */
+
+@keyframes flipY{
+    from {
+        -webkit-transform: rotateY(180deg);
+    }
+    
+    to {
+        -webkit-transform: rotateY(-180deg);
+    }
+    
+}
+
+.flip-container .flipper {
+	animation: flipY 6s infinite;
+}
+
+#scooter{
+    margin-top: 35%;
+    margin-left: 45%;
+   
+    
+}
+
+
+	/* #particles-js{  
+        position:absolute; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #151039;      } */

@@ -1,0 +1,92 @@
+
+
+.circle{
+    border-radius: 250px;
+   
+
+}
+
+.flip-container {
+    
+	-webkit-perspective: inherit;
+    display: flex;
+   justify-content: center;
+   
+   
+}
+
+.flip-base{
+	top: 20%;
+	-webkit-transform-style: preserve-3d;
+	position: absolute;
+	height: 300px ;
+    width: 280px;
+   
+}
+
+.front-photo,
+.back-photo {
+
+	width: 280px;
+	height: 300px;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	
+	
+}
+
+
+.back-photo {
+	-webkit-transform: rotateY(180deg);
+   
+}
+
+
+.bottom{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    right: 25%;
+}
+
+
+
+/* Flip Animation */
+
+@keyframes flipY{
+    from {
+        -webkit-transform: rotateY(180deg);
+    }
+    
+    to {
+        -webkit-transform: rotateY(-180deg);
+    }
+    
+}
+
+.flip-container .flip-base {
+	animation: flipY 7s infinite;
+}
+
+ #scooter{
+     display: flex;
+   
+    
+} 
+
+p{
+    color: #ffff;
+}
+
+	#particles-js{  
+        position:absolute; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #151039;      } 
+
+
+
+body{
+    margin: 0;
+}
