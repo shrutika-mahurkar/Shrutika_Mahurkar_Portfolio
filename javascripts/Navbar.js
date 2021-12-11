@@ -7,3 +7,4 @@ function collapsedNavbar(){
     collapsedMenu.classList.toggle("active");
     navbarMenu.classList.toggle("active");
 }
+
