@@ -7,16 +7,17 @@
          <title>Introduction</title>       
          <link href="StyleSheet/Navbar.css" type="text/css" rel="stylesheet">
          <script src="javascripts/Navbar.js" defer type="text/javascript"></script> 
-         <!-- <link href="StyleSheet/Education.css" type="text/css" rel="stylesheet"> -->
+         <link href="StyleSheet/Education.css" type="text/css" rel="stylesheet">
          
         </head>
-        <body>
-       
+        <body >
+      
+
+      
             <header class="navbar-container">
                 <nav class="navbar">
                     <h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1>
                     <ul class="navbar-menu">
-
                         <li class="navbar-item"> <a class="navbar-link" href="Introduction.html">ABOUT</a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Education.html"><b>EDUCATION</b></a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Skills.html">SKILLS</a> </li>
@@ -30,7 +31,22 @@
                     </div>
                 </nav>
             </header>
+            <div id="app">
+            <div class="wrapper" v-for="(Edu,index) in Education" >
+                <div class=" center-line"></div>
+                <div class="row" :class="{'row1': index % 2 === 0, 'row2': index % 2 !== 0 }">
+                    <section>
+                        <div class="details">
+                            <span class="title"><b>{{Edu.school}}</b></span>
+                            <span ><b>{{Edu.yearconferred}}</b></span>
+                        </div>
+                            <p>{{Edu.type}} </br>{{Edu.major}}</p> 
+                    </section>
+                </div>
+            </div>
             
-       
+        </div>
+        <script src="https://unpkg.com/vue" ></script>
+        <script src="javascripts/Education.js"></script>
         </body>
 </html>
