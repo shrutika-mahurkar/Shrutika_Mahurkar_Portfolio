@@ -55,17 +55,12 @@
             </div>
             <h1>PROJECTS</h1>
             <section id="projects-box">
-                <articles class="project" v-on:click ="getProjectList" ><b><span>{{projectList}}</span></b></articles>
-
-            <!-- <articles class="project" v-on:click ="getProjectList" v-for ="project in projectList" :key="projectList.name"><b><span>{{projectList.name}}</span></b></articles> -->
-            <!-- <articles class="project"><b>Marathon Runner App</b></articles>
-
-            <articles class="project"><b>Letter Grader App</b></articles>
-            <articles class="project"><b>Movie List App</b></articles>
-            <articles class="project"><b>Banking Application</b></articles>
-            <articles class="project"><b>Student Web Portfolio</b></articles> -->
+             <div class="project" v-for="project in projectList" >
+            <articles ><b>{{project.name}}</b></articles>
+            </div> 
         </section>
         <script src="https://unpkg.com/vue"></script>
        <script src="Skills.js"></script>
+       
         </body>
 </html>

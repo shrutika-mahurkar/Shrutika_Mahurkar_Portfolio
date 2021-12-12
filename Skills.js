@@ -1,25 +1,21 @@
 var project = new Vue({
+    el :"#projects-box",
     
-    name: "project",
-    // data:{
-    //     projects:null
-    // },
+    data:{
+        projectList:[]
+     },
 
-    //         getProjectList(){
-    //             fetch("Project.json").then(Response=>Response.json().then(data=>this.projectList=data));
-    //         }
-
-    data() {
-        return {
-            projectList: []
-        };
-      },
-      methods: {
-        getProjectList() {
-          fetch("./Project.json")
+     mounted(){
+         this.getProjectList();
+           
+     },
+     methods:{
+        getProjectList(){
+            fetch("https://shrutika-mahurkar.github.io/Shrutika_Mahurkar_Portfolio/Project.json")
             .then(response => response.json())
-            .then(data => (this.projectList = data));
-        }
-      }
-  
-});
+            .then(data =>(this.projectList = data));
+        },
+     }
+    })
+
+    
