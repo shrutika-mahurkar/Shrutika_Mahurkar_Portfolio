@@ -1,0 +1,62 @@
+#form{
+    width: 400px;
+    
+    margin: 20vh auto 0 auto;
+    padding: 30px;
+    background-color:#b9afff12;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+label{
+    color: #ffff;
+    padding:4px;
+}
+#form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.inputBox input:focus {
+    outline: 0;
+}
+
+.inputBox.success input {
+    border-color: #09c372;
+}
+
+.inputBox.error input {
+    border-color: #ff3860;
+}
+
+.inputBox .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}

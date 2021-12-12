@@ -8,6 +8,9 @@
          <link href="StyleSheet/Intro.css" type="text/css" rel="stylesheet">
          <link href="StyleSheet/Navbar.css" type="text/css" rel="stylesheet">
          <script src="javascripts/Navbar.js" defer type="text/javascript"></script> 
+         <link href="StyleSheet/contact.css" type="text/css" rel="stylesheet">
+         <script src="javascripts/contact.js" defer type="text/javascript"></script> 
+
          
         </head>
         <body>
@@ -21,7 +24,7 @@
                         <li class="navbar-item"> <a class="navbar-link" href="Education.html">EDUCATION</a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Skills.html">SKILLS</a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Contact.html"><b>CONTACT</b></a> </li>
-                        <li class="navbar-item navbar-link"> RESUME </li>
+                        <li class="navbar-item"> <a class="navbar-link" href="SHRUTIKA_MAHURKAR_RESUME.pdf" target="_blank"> RESUME </a></li>
                     </ul> 
                     <div class="collapsed-navbar">
                         <span class="bar"></span>
@@ -29,9 +32,32 @@
                         <span class="bar"></span>
                     </div>
                 </nav>
-            
             </header>
-            
+            <div class="FeedbackForm">
+                <form id="form" action="/">
+                    <h1>Lets get in touch</h1>
+                    <div class="inputBox">
+                        <label for="username">What should I call you?</label>
+                        <input id="username" name="username" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">How should I contact you?</label>
+                        <input id="email" name="email" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Want to share some thoughts?</label>
+                        <input id="message" name="message" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Let's go</button>
+                </form>
+            </div>
+
+            <footer>
+                <P id="footer">&copy; Copyright 2021, Shrutika Mahurkar</P>
+              </footer>
        
         </body>
 </html>

@@ -14,16 +14,18 @@
         </head>
         <body>
        
+          
             <header class="navbar-container">
                 <nav class="navbar">
-                    <h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1>
+                    <a href="CoverPage.html"><h1 class="navbar-logo" ><b>Shrutika Mahurkar</b></h1></a>
                     <ul class="navbar-menu">
-
-                        <li class="navbar-item"> <a class="navbar-link" href="Introduction.html">ABOUT</a> </li>
+                        <li class="navbar-item"> <a class="navbar-link" href="Introduction.html"><b>ABOUT</b></a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Education.html">EDUCATION</a> </li>
-                        <li class="navbar-item"> <a class="navbar-link" href="Skills.html"><b>SKILLS</b></a> </li>
+                        <li class="navbar-item"> <a class="navbar-link" href="Skills.html">SKILLS</a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Contact.html">CONTACT</a> </li>
-                        <li class="navbar-item navbar-link"> RESUME </li>
+                        <li class="navbar-item"> <a class="navbar-link" href="SHRUTIKA_MAHURKAR_RESUME.pdf" target="_blank"> RESUME </a></li>
+                       
+
                     </ul> 
                     <div class="collapsed-navbar">
                         <span class="bar"></span>
@@ -31,26 +33,39 @@
                         <span class="bar"></span>
                     </div>
                 </nav>
-            
             </header>
             
             <div class="skills"> 
-                <h1>My SKills....</h1>
+                <h1>SKILLS</h1>
+                <div id="skillset">
                 <li><h3>JAVA</h3>
-                    <span class="bar"><span class="java"></span></span>
+                    <span class="scale"><span class="java"></span></span>
                     </li>
                 <li><h3>HTML</h3>
-                <span class="bar"><span class="html"></span></span>
+                <span class="scale"><span class="html"></span></span>
                 </li>
                 <li><h3>CSS</h3>
-                    <span class="bar"><span class="css"></span></span>
+                    <span class="scale"><span class="css"></span></span>
                     </li>
                     <li><h3>JAVASCRIPT</h3>
-                        <span class="bar"><span class="javascript"></span></span>
+                        <span class="scale"><span class="javascript"></span></span>
                         </li>
                         
-    
-    
+                    </div>
             </div>
+            <h1>PROJECTS</h1>
+            <section id="projects-box">
+                <articles class="project" v-on:click ="getProjectList" ><b><span>{{projectList}}</span></b></articles>
+
+            <!-- <articles class="project" v-on:click ="getProjectList" v-for ="project in projectList" :key="projectList.name"><b><span>{{projectList.name}}</span></b></articles> -->
+            <!-- <articles class="project"><b>Marathon Runner App</b></articles>
+
+            <articles class="project"><b>Letter Grader App</b></articles>
+            <articles class="project"><b>Movie List App</b></articles>
+            <articles class="project"><b>Banking Application</b></articles>
+            <articles class="project"><b>Student Web Portfolio</b></articles> -->
+        </section>
+        <script src="https://unpkg.com/vue"></script>
+       <script src="Skills.js"></script>
         </body>
 </html>
