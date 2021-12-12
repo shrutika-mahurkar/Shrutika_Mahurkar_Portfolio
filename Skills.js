@@ -7,6 +7,7 @@ var project = new Vue({
 
      mounted(){
          this.getProjectList();
+         
            
      },
      methods:{
@@ -15,6 +16,9 @@ var project = new Vue({
             .then(response => response.json())
             .then(data =>(this.projectList = data));
         },
+        goToGit(url){  
+            window.open(url);   
+        }
      }
     })
 

@@ -56,7 +56,7 @@
             <h1>PROJECTS</h1>
             <section id="projects-box">
              <div class="project" v-for="project in projectList" >
-            <articles ><b>{{project.name}}</b></articles>
+            <div  @click="goToGit(project.url)" ><b>{{project.name}}</b></div>
             </div> 
         </section>
         <script src="https://unpkg.com/vue"></script>
