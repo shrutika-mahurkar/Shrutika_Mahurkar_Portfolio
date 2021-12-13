@@ -14,15 +14,20 @@ body{
 h1{
     text-align: center;
     display: block;
-    color: #ffff;
+    color: #574e97;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+  }
 
 
 .skills{
-    background-color: #b9afff12;;
+    background-color: #b9afff12;
     border-radius: 7px;
-
     max-width: 650px ; 
     min-width: 300px;
     margin:60px auto;
@@ -33,14 +38,23 @@ h1{
    height: 50vh;
    justify-content: center;
    position: relative;
-   flex-direction: column;
+   flex-direction: row;
    
 }
+.skillsContainer{
+
+    justify-content: flex-end;
+    width:90%;
+
+    
+    }
+    
+
 #skillset{
   position: relative;
   display: flex;
   flex-direction: column;
-  
+  width: 70%;
   height: 100%;
   
 }
@@ -59,10 +73,10 @@ h1{
 .scale{
     margin: 1.5vh 0 0 0;
     width: 90%;
-    background: #353b48;
+    background: #cbced59e;
     display: block;
     
-    border: 1px rgba(0, 0, 0, 0.25);
+    border: 1px rgba(255, 254, 254, 0.425);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
@@ -78,7 +92,7 @@ h1{
 .scale span{
     height: 20px;
     float: left;
-    background:linear-gradient(to right, red , yellow);
+    background:linear-gradient(to right, #265bef , #031640);
   /*  background: linear-gradient(to right, #0CD5AD 0%, #A46092 50%, #FFF511 100%);*/
 } 
 
@@ -138,7 +152,7 @@ width: 0%;
             }
 
 #projects-box{
-    height: 40vh;
+    /* height: 40vh; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -158,6 +172,40 @@ width: 0%;
     color: #574e97;
     min-width: 300px;
     min-height: 100px;
+
+
+}
+
+.project:active{
+    background-color: #b8e2fc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tooltip{
+    visibility: hidden;
+    font-size:x-small;
+    top:100%;
+    text-align: center;
+}
+.project:hover .tooltip{
+    visibility: visible;
+    
 }
 
 
+
+    /* .skillImage{
+      margin-top: 20%;
+    } */
+
+    @media(max-width: 768px){
+       
+        .skillImage{
+          display: none;
+        }
+        .skillsContainer{
+            width: 100%;
+            
+        }
+    }

@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Introduction</title>       
+         <title>Contact</title>       
          <link href="StyleSheet/Intro.css" type="text/css" rel="stylesheet">
          <link href="StyleSheet/Navbar.css" type="text/css" rel="stylesheet">
-         <script src="javascripts/Navbar.js" defer type="text/javascript"></script> 
+         <script src="javascripts/Navbar.js" defer ></script> 
          <link href="StyleSheet/contact.css" type="text/css" rel="stylesheet">
-         <script src="javascripts/contact.js" defer type="text/javascript"></script> 
+         <script src="javascripts/contact.js" defer ></script> 
 
          
         </head>
@@ -17,7 +17,7 @@
        
             <header class="navbar-container">
                 <nav class="navbar">
-                    <h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1>
+                    <a href="CoverPage.html"><h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1></a>
                     <ul class="navbar-menu">
 
                         <li class="navbar-item"> <a class="navbar-link" href="Introduction.html">ABOUT</a> </li>
@@ -33,28 +33,32 @@
                     </div>
                 </nav>
             </header>
-            </body>
-            <main>
+            
+            <main id="main">
+
             <div class="FeedbackForm">
-                <form id="form" action="contactConfirmation.php">
+                <form id="form" action="contactConfirmation.php"  method="post" onsubmit="return validation()">
                     <h3>Lets get in touch</h3>
                     <div class="inputBox">
-                        <label for="username">What should I call you?</label>
-                        <input id="username" name="username" type="text">
-                        <div class="error"></div>
+                        <label for="username">Your name:*</label> <span id="usernameError"></span>
+                        <input id="username" name="username" type="text" required>
+                       
                     </div>
                     <div class="inputBox">
-                        <label for="email">How should I contact you?</label>
-                        <input id="email" name="email" type="text">
-                        <div class="error"></div>
+                        <label for="email">Your email address:*</label><span id="emailError"></span>
+                        <input id="email" name="email" type="text" required>
+                        
                     </div>
                     <div class="inputBox">
-                        <label for="message">Want to share some thoughts?</label>
-                        <input id="message" name="message" type="text">
-                        <div class="error"></div>
+                        <label for="message">Want to share some thoughts?</label> <span id="messageError"></span>
+                        <textarea id="message" name="message"  required rows="6" maxlength="4000"> </textarea>
+                       
                     </div>
                     <button type="submit">Let's go</button>
                 </form>
+                <div class="mailImage">
+                    <img   src="images/mailGirl.gif" alt="girl sending mail" width="200" height="200" >
+                   </div> 
             </div>
             </main>
             <footer>

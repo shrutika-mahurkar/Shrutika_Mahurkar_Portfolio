@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Introduction</title>       
+         <title>Skills</title>       
          <link href="StyleSheet/Intro.css" type="text/css" rel="stylesheet">
          <link href="StyleSheet/Navbar.css" type="text/css" rel="stylesheet">
-         <script src="javascripts/Navbar.js" defer type="text/javascript"></script> 
+         <script src="javascripts/Navbar.js" defer ></script> 
          
          <link href="StyleSheet/skillsStyleSheet.css" type="text/css" rel="stylesheet">
 
@@ -17,7 +17,7 @@
           
             <header class="navbar-container">
                 <nav class="navbar">
-                    <a href="CoverPage.html"><h1 class="navbar-logo" ><b>Shrutika Mahurkar</b></h1></a>
+                    <h1 class="navbar-logo"> <a href="CoverPage.html"><b>Shrutika Mahurkar</b></a></h1>
                     <ul class="navbar-menu">
                         <li class="navbar-item"> <a class="navbar-link" href="Introduction.html"><b>ABOUT</b></a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Education.html">EDUCATION</a> </li>
@@ -34,35 +34,42 @@
                     </div>
                 </nav>
             </header>
-            </body>
-            <main>
-            <div class="skills"> 
-                <h1>SKILLS</h1>
-                <div id="skillset">
-                <li><h3>JAVA</h3>
-                    <span class="scale"><span class="java"></span></span>
-                    </li>
-                <li><h3>HTML</h3>
-                <span class="scale"><span class="html"></span></span>
+           
+            <main id="main">
+<div class="skillsContainer">
+    
+    <div class="skills"> 
+        <img  class="skillImage"  src="images/hello.gif" alt="girl typing on computer" width="200" height="200" >
+
+        <!-- <h1>SKILLS</h1> -->
+        <ul id="skillset">
+        <li><h3>JAVA</h3>
+            <span class="scale"><span class="java"></span></span>
+            </li>
+        <li><h3>HTML</h3>
+        <span class="scale"><span class="html"></span></span>
+        </li>
+        <li><h3>CSS</h3>
+            <span class="scale"><span class="css"></span></span>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <span class="scale"><span class="javascript"></span></span>
                 </li>
-                <li><h3>CSS</h3>
-                    <span class="scale"><span class="css"></span></span>
-                    </li>
-                    <li><h3>JAVASCRIPT</h3>
-                        <span class="scale"><span class="javascript"></span></span>
-                        </li>
-                        
-                    </div>
-            </div>
-            <h1>PROJECTS</h1>
-            <section id="projects-box">
-             <div class="project" v-for="project in projectList" >
-            <div  @click="goToGit(project.url)" ><b>{{project.name}}</b></div>
-            </div> 
-        </section>
+                
+            </ul>
+    </div>
+    <h1>PROJECTS</h1>
+    <section id="projects-box">
+     <div class="project" v-for="project in projectList" >
+    <div  @click="goToGit(project.url)" ><b>{{project.name}}</b></div>
+    <span class="tooltip">Click to go to github</span>
+    </div> 
+</section>
+</div>
+           
     </main>
         <script src="https://unpkg.com/vue"></script>
-       <script src="Skills.js"></script>
+       <script src="javascripts/Skills.js"></script>
        <footer>
         <p id="footer">&copy; Copyright 2021, Shrutika Mahurkar</p>
     </footer>

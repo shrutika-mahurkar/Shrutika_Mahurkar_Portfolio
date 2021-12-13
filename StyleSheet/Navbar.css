@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+
+}
+
 html{
     font-size: 62.5%;
     font-family: Verdana, sans-serif,Georgia, 'Times New Roman', Times, serif;
@@ -38,7 +43,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(56,74,147,0.98503
 
 .navbar-menu{
     z-index: 5;
-    height:60%;
+    /* height:60%; */
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -145,6 +150,7 @@ background-size: cover;
   
   #footer{
    
+   bottom: 0;
     margin-top: auto;
     margin-left: 4vw;
     margin-right: 4vw;
@@ -156,4 +162,8 @@ background-size: cover;
 
   .overflow_hidden{
       overflow: hidden !important;
+  }
+
+  #main{
+    /* height: 100vh; */
   }

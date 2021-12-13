@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Introduction</title>       
+         <title>Education</title>       
          <link href="StyleSheet/Navbar.css" type="text/css" rel="stylesheet">
-         <script src="javascripts/Navbar.js" defer type="text/javascript"></script> 
+         <script src="javascripts/Navbar.js" defer ></script> 
          <link href="StyleSheet/Education.css" type="text/css" rel="stylesheet">
          
         </head>
         <body >
             <header class="navbar-container">
                 <nav class="navbar">
-                    <h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1>
+                    <a href="CoverPage.html"><h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1></a>
                     <ul class="navbar-menu">
                         <li class="navbar-item"> <a class="navbar-link" href="Introduction.html">ABOUT</a> </li>
                         <li class="navbar-item"> <a class="navbar-link" href="Education.html"><b>EDUCATION</b></a> </li>
@@ -28,7 +28,9 @@
                     </div>
                 </nav>
             </header>
-            <main>
+            <main id="main">
+                <img  class="graduationImage"  src="images/graduation.gif" alt="graduate student jumping" width="200" height="200" >
+
             <div id="app">
             <div class="wrapper" v-for="(Edu,index) in Education" >
                 <div class=" center-line"></div>
