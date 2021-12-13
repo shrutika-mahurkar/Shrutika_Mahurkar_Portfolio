@@ -6,5 +6,6 @@ collapsedMenu.addEventListener("click",collapsedNavbar);
 function collapsedNavbar(){
     collapsedMenu.classList.toggle("active");
     navbarMenu.classList.toggle("active");
+    document.body.classList.add("overflow_hidden");
 }
 

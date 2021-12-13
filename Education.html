@@ -11,9 +11,6 @@
          
         </head>
         <body >
-      
-
-      
             <header class="navbar-container">
                 <nav class="navbar">
                     <h1 class="navbar-logo"><b>Shrutika Mahurkar</b></h1>
@@ -31,6 +28,7 @@
                     </div>
                 </nav>
             </header>
+            <main>
             <div id="app">
             <div class="wrapper" v-for="(Edu,index) in Education" >
                 <div class=" center-line"></div>
@@ -40,13 +38,17 @@
                             <span class="title"><b>{{Edu.school}}</b></span>
                             <span ><b>{{Edu.yearconferred}}</b></span>
                         </div>
-                            <p>{{Edu.type}} </br>{{Edu.major}}</p> 
+                            <p>{{Edu.type}} <br> {{Edu.major}}</p> 
                     </section>
                 </div>
             </div>
             
         </div>
+            </main>
         <script src="https://unpkg.com/vue" ></script>
         <script src="javascripts/Education.js"></script>
+        <footer>
+            <p id="footer">&copy; Copyright 2021, Shrutika Mahurkar</p>
+        </footer>
         </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 .partition{
     width:50%;
     float:left;
@@ -7,33 +9,86 @@
    flex:1;
     margin-right:20px;
     height:100vh;
-    display:absolute; 
+     /* display: flex; */
+     display: inline-flex;
+    border:2px solid yellow;
+    /* min-width: 750px; */
+    justify-content: center;
+    padding: 5%;
+    position: relative;
+    
 }
 
 .about{
+  
     display:flex;
+   flex-wrap: wrap;
     flex-direction:row;
+    border:5px solid rgb(255, 123, 0);
 }
 
+.partition img{
+  display: flex;
+  
+} 
 
 
 .partition-Image{
-    padding: 25px;
-    margin:20px 20px 20px ;
-    
+  /*position: absolute; */
+  min-width:20%;
+   width:40vw;
+   height: 90%;
     border-radius: 40px;
-    position: relative;
+   
     animation-name: slide-in;
-    animation-duration: 2s;  
+    animation-duration: 4s;  
     animation-fill-mode: forwards;
-  transform: rotate(8deg);
+  
+  
+}
+
+/* img{
+  
+    position: absolute;
+    min-width:20%;
+     width:40vw;
+     height: 90%;
+      border-radius: 40px;
+     
+      animation-name: slide-in;
+      animation-duration: 4s;  
+      animation-fill-mode: forwards;
+    
+    
+  } */
+
+
+.partition-Text{
+ padding-top: 14%;
+  font-size: medium;
+  color: #362e70;
+  line-height: 3rem;
+  animation-name: slide-right;
+  animation-duration: 4s;  
+  animation-fill-mode: forwards;
   
 }
 
 @keyframes slide-in
 {
     from {left: 0px ;opacity:0; }
-    to {left: 100px;}
+    to {left: 60px;}
+  }
+
+  @keyframes slide-right {
+    from {right: 0% ;opacity:0; }
+    to {right: 5px;}
+  }
+
+  .about .partition .partition-Image
+  {
+    
+    border:2px solid rgb(226, 16, 16);
   }
 
   

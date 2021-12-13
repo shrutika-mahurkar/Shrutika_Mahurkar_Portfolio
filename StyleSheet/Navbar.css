@@ -133,4 +133,23 @@ height:100vh;
   background:linear-gradient(160deg, #016ecbbd, #016ecbbd 60%, white 60%, white);
     background-repeat: no-repeat;
 background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #footer{
+   
+    margin-top: auto;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: center;
+    border-top: 1px solid grey;
+    padding:1vh;
+    font-size: small;
+  }
+
+  .overflow_hidden{
+      overflow: hidden !important;
   }
