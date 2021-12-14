@@ -10,7 +10,7 @@ function validation(){
     var messageStatus=true;
     
   
-    //validate length of text input
+    //validate length of username
     if(username.length < 2 ){
         
         document.getElementById("usernameError").innerHTML = "*Please enter 2 or more characters";
@@ -24,14 +24,14 @@ function validation(){
         document.getElementById("usernameError").innerHTML = "*Please use alphabets (A-Z/a-z) only ";
         usernameStatus= false;
     }
-        //validate length of text input
+        //validate length of message
         if(message.length < 2 ){
             document.getElementById("messageError").innerHTML = "*Please enter 2 or more characters";
             messageStatus= false;
         }
        
  
-    //validate length of text input
+    //validate email
     
      let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
      emailStatus= regex.test(String(email).toLowerCase());

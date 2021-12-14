@@ -8,6 +8,7 @@ main{
   display: flex;
   flex-direction: row;
   padding: 20px;
+  height: 100vh;
 }
 
 #app{
@@ -81,7 +82,7 @@ section{
    text-align: center;
    font-size: 2rem;
  }
- @media(max-width: 768px){
+ @media(max-width: 760px){
   .wrapper .center-line { 
     display: none;
   }
@@ -91,9 +92,12 @@ section{
   .wrapper .row{
     margin: 30px 0 3px 10px;
   }
+  main{
+    height: auto;
+  }
   .wrapper .row section{
     width: 100%;
-  }
+  }}
   @media(max-width: 440px){
     .wrapper .center-line{
       display: none;
@@ -101,4 +105,4 @@ section{
     .wrapper .row{
       margin: 10px 0;
     }
-  }}
+  }

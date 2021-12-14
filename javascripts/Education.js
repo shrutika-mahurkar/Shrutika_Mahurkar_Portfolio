@@ -21,7 +21,7 @@ Education:[
     {
         
         "school": "Nagpur University",
-        "major": "Electronics and Telecommnunication",
+        "major": "Electronics and Telecom",
         "type": "Bachelors of Engineering",
         "yearconferred":2017,
         "courses":["MET CS520","MET CS 601"]
